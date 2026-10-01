@@ -1,0 +1,3 @@
+export const domain = 'https://edupassfolio.one.th';
+export const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50X2lkIjoibG9hZHRlc3QtbW9jay0wMDAxIiwiaWF0IjoxNzkwODIzMjE4LCJleHAiOjE3OTE0MjgwMTh9.jzgCsFUXSYIjXqmXQl246JJ07F4HVD6njwYzsuE44Ho';
+export const student_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50X2lkIjoibG9hZHRlc3QtbW9jay0wMDAyIiwiaWF0IjoxNzkwODIzMjE4LCJleHAiOjE3OTE0MjgwMTh9.-YlFXvUiz2iOnZ5bsa7OCjA-OIECF8pTlFmY_bls920'
