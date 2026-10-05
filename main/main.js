@@ -12,7 +12,6 @@ import { Get_Education_Detail } from '../api/Get_Education_Detail.js';
 import { Get_Dropdown_List } from '../api/Get_Dropdown_List.js';
 import { Get_User_Info_Student } from '../api/Get_User_Info_Student.js';
 import { Add_Portfolio } from '../api/Add_Portfolio.js';
-import { Add_Portfolio_c2 } from '../api/Add_Portfolio_c2.js';
 import { Add_CPD_Activity } from '../api/Add_CPD_Activity.js';
 import { Add_Experience } from '../api/Add_Experience.js';
 import { Update_Portfolio } from '../api/Update_Portfolio.js';
@@ -31,16 +30,15 @@ export default function () {    //เรียกใช้ API ใน export def
   // response = List_Course()                   // 7
   // response = Get_Education_Detail()          // 8
   // response = Get_Dropdown_List()             // 9
-  
-  // response = Add_Portfolio(cid)              // 10 /// Add_Portfolio ยิงผสมกับ Add_Portfolio_c2
-  // response = Add_Portfolio_c2(cid)           // 11 /// Add_Portfolio ยิงผสมกับ Add_Portfolio_c2
-  // response = Add_CPD_Activity(cid)           // 12
-  // response = Add_Experience(cid)             // 13
-  // response = Update_Portfolio(cid,scenario)  // 14
 
-  // response = Get_User_Info_Student()         // 15
-  // response = Get_Home_Student()              // 16
-  // response = List_Learner_Activity()        // 17
+  // response = Add_Portfolio(cid)              // 10 
+  // response = Add_CPD_Activity(cid)           // 11
+  // response = Add_Experience(cid)             // 12
+  // response = Update_Portfolio(cid,scenario)  // 13
+
+  // response = Get_User_Info_Student()         // 14
+  // response = Get_Home_Student()              // 15
+  // response = List_Learner_Activity()        // 16
 
 
   error_check(response);
