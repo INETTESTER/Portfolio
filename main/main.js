@@ -40,6 +40,7 @@
 //   // response = Get_User_Info_Student()         // 14
 //   // response = Get_Home_Student()              // 15
 //   // response = List_Learner_Activity()        // 16
+//      response = List_Detail_Portfolio()        //17 เพิ่มมาใหม่
 //
 //
 //   error_check(response);
@@ -68,28 +69,30 @@ import { Add_Experience } from '../api/Add_Experience.js';
 import { Update_Portfolio } from '../api/Update_Portfolio.js';
 import { Get_Home_Student } from '../api/Get_Home_Student.js';
 import { List_Learner_Activity } from '../api/List_Learner_Activity.js';
+import { List_Detail_Portfolio } from '../api/List_Detail_Portfolio.js';
 
 // API LIST — ชื่อ (ใช้ใน ./open.sh <api>) : วิธีเรียก (argument เหมือนเดิมทุกเส้น)
 // มี API ใหม่ ให้ import ด้านบน แล้วเพิ่มบรรทัดในนี้
 const API_LIST = {
-  Get_User_Info:         () => Get_User_Info(),               // 1
-  Get_Home:              () => Get_Home(),                    // 2
-  List_Portfolio:        () => List_Portfolio(),              // 3
-  List_CPD_Activity:     () => List_CPD_Activity(),           // 4
-  List_Term:             () => List_Term(),                   // 5
+  Get_User_Info: () => Get_User_Info(),               // 1
+  Get_Home: () => Get_Home(),                    // 2
+  List_Portfolio: () => List_Portfolio(),              // 3
+  List_CPD_Activity: () => List_CPD_Activity(),           // 4
+  List_Term: () => List_Term(),                   // 5
   Get_Experience_Detail: () => Get_Experience_Detail(),       // 6
-  List_Course:           () => List_Course(),                 // 7
-  Get_Education_Detail:  () => Get_Education_Detail(),        // 8
-  Get_Dropdown_List:     () => Get_Dropdown_List(),           // 9
+  List_Course: () => List_Course(),                 // 7
+  Get_Education_Detail: () => Get_Education_Detail(),        // 8
+  Get_Dropdown_List: () => Get_Dropdown_List(),           // 9
 
-  Add_Portfolio:         () => Add_Portfolio(cid),            // 10
-  Add_CPD_Activity:      () => Add_CPD_Activity(cid),         // 11
-  Add_Experience:        () => Add_Experience(cid),           // 12
-  Update_Portfolio:      () => Update_Portfolio(cid, scenario), // 13
+  Add_Portfolio: () => Add_Portfolio(cid),            // 10
+  Add_CPD_Activity: () => Add_CPD_Activity(cid),         // 11
+  Add_Experience: () => Add_Experience(cid),           // 12
+  Update_Portfolio: () => Update_Portfolio(cid, scenario), // 13
 
   Get_User_Info_Student: () => Get_User_Info_Student(),       // 14
-  Get_Home_Student:      () => Get_Home_Student(),            // 15
+  Get_Home_Student: () => Get_Home_Student(),            // 15
   List_Learner_Activity: () => List_Learner_Activity(),       // 16
+  List_Detail_Portfolio: () => List_Detail_Portfolio(),   // 17 เพิ่มมาใหม่
 };
 
 // SELECT API — รับชื่อจาก --env api=<ชื่อ> (ส่งมาจาก open.sh) ถ้าไม่มีหรือพิมพ์ผิดจะหยุดก่อนยิง
